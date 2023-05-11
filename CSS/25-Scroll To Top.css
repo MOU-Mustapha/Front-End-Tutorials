@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+  body {
+  font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 5000px;
+}
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: -50px;
+  background-color: #ff5722;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.up.show {
+  right: 10px;
+}

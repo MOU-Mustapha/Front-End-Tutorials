@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #333;
+}
+.link {
+  color: #8bc34a;
+  text-decoration: none;
+  display: block;
+  border: 2px solid #8bc34a;
+  margin: 20px auto;
+  position: relative;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.link::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(-100%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  -webkit-transform: translateY(-50%) translateX(-100%);
+  -moz-transform: translateY(-50%) translateX(-100%);
+  -ms-transform: translateY(-50%) translateX(-100%);
+  -o-transform: translateY(-50%) translateX(-100%);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.link span {
+  display: block;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.link:hover span {
+  transform: translateX(150%);
+  -webkit-transform: translateX(150%);
+  -moz-transform: translateX(150%);
+  -ms-transform: translateX(150%);
+  -o-transform: translateX(150%);
+}
+.link:hover::before {
+  transform: translateX(0) translateY(-50%);
+  -webkit-transform: translateX(0) translateY(-50%);
+  -moz-transform: translateX(0) translateY(-50%);
+  -ms-transform: translateX(0) translateY(-50%);
+  -o-transform: translateX(0) translateY(-50%);
+}

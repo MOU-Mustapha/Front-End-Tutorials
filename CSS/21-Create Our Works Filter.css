@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+  body {
+  font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.switcher {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+.switcher li {
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #eee;
+  min-width: 105px;
+  text-align: center;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.switcher li.active,
+.switcher li:hover {
+  background-color: red;
+  color: white;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+}
+.gallery img {
+  margin-bottom: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  margin-left: 5px;
+  margin-right: 5px;
+}

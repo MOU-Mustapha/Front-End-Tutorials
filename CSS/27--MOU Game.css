@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+.control {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #eff7fae6;
+}
+.control span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  color: #f3c30e;
+  background-color: #ff3150;
+  padding: 20px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  user-select: none;
+  cursor: pointer;
+  text-align: center;
+}
+.info-container {
+  width: 580px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #19283f;
+  color: white;
+  font-size: 24px;
+  border: 3px solid #f3c30e;
+}
+.game-container {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.game-container.no-click {
+  pointer-events: none;
+}
+.game-container .game-block {
+  height: 100px;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+  flex: 1 0 100px;
+  margin: 0 10px 20px;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.game-container .game-block .front {
+  background-color: #19283f;
+  line-height: 100px;
+}
+.game-container .game-block .back {
+  background-color: #eff7fa;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+.game-container .game-block .front::before {
+  content: "?";
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+}
+.game-container .game-block .back img {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+}
+.game-container .game-block .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border: 5px solid #f3c30e;
+}
+.game-container .game-block.flip,
+.game-container .game-block.matched {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  pointer-events: none;
+}

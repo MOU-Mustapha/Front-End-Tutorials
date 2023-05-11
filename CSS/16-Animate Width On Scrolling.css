@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  body {
+  font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:first-child {
+  background-color: #aaa;
+}
+section:nth-child(2) {
+  background-color: #bbb;
+}
+section:nth-child(3) {
+  background-color: #ccc;
+}
+section:last-of-type {
+  background-color: #eee;
+}
+h3 {
+  padding-left: 10px;
+}
+.progress {
+  position: relative;
+  width: 500px;
+  height: 30px;
+  background-color: white;
+  margin: 10px;
+}
+.progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: indianred;
+  transition: width 0.3s linear;
+  -webkit-transition: width 0.3s linear;
+  -moz-transition: width 0.3s linear;
+  -ms-transition: width 0.3s linear;
+  -o-transition: width 0.3s linear;
+}

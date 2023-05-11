@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product {
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px 0 #ddd;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.product .number {
+  background-color: #009688;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 26px;
+  font-weight: bold;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+.product h3 {
+  margin: 15px 0;
+  font-size: 26px;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+.product p {
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  line-height: 1.6;
+  font-size: 18px;
+}
+.product:hover .number {
+  box-shadow: 0 0 0 500px #009688;
+}
+.product:hover h3, 
+.product:hover p {
+  color: white  ;
+}
